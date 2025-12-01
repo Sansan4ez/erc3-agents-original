@@ -46,7 +46,7 @@ CLI_CLR = "\x1B[0m"
 
 def run_agent(model: str, api: ERC3, task: TaskInfo):
 
-    store_api = api.get_erc_dev_client(task)
+    store_api = api.get_erc_client(task)
     about = store_api.who_am_i()
 
     system_prompt = f"""
