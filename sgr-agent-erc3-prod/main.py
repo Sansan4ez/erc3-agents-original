@@ -4,16 +4,12 @@ from openai import OpenAI
 from agent import run_agent
 from erc3 import ERC3
 
-client = OpenAI()
 core = ERC3()
 MODEL_ID = "gpt-4.1"
-
 
 # Debugging a single task
 # task = core.start_new_task("erc3-test", "project_check_by_member")
 #run_agent(MODEL_ID, core, task)
-
-
 
 # Start session with metadata
 res = core.start_session(
